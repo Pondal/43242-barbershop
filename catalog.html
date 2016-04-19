@@ -10,24 +10,27 @@
           <a href="#">Лого</a>
            <nav class="main-navigation">
                <ul>
-                   <li>Информация</li>
-                   <li>Новости</li>
-                   <li>Прайс-лист</li>
-                   <li>Магазин</li>
-                   <li>Контакты</li>
+                   <li><a href="#">Информация</a></li>
+                   <li><a href="#">Новости</a></li>
+                   <li><a href="#">Прайс-лист</a></li>
+                   <li><a href="#">Магазин</a></li>
+                   <li><a href="#">Контакты</a></li>
                </ul>
-               <a href="#">ВХОД</a>
+               <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
            </nav>
        </div>
    </header>
    <div class="catalog">
-        <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-        <a href="#">Главная</a>
+       <fieldset>
+       <legend>СРЕДСТВА ДЛЯ УХОДА</legend>
+        <input id="home" input type="submit"><label for="home">Главная</label>
         <a href="#">Магазин</a>
         <a href="#">Средства для ухода</a>
-        
+        </fieldset>
         <h1>Производители:</h1>
-        <ul class="manufacture">
+        <ul class="checkbox">
             <li>Baxter of california</li>
             <li>MR NATTY</li>
             <li>SULVEOTO</li>
@@ -37,7 +40,7 @@
         </ul>
        
        <h1>ГРУППЫ ТОВАРОВ:</h1>
-       <ul class="groups">
+       <ul class="radio">
            <li>БРИТВЕННЫЕ ПРЕНАДЛЕЖНОСТИ</li>
            <li>СРЕДСТВА ДЛЯ УХОДА</li>
            <li>АКСЕССУАРЫ</li>
@@ -78,12 +81,10 @@
        </div>
    </div>
    <div class="pagesbutton">
-       <ul>
-           <li><a href="#">1</a></li>
-           <li><a href="#">2</a></li>
-           <li><a href="#">3</a></li>
-           <li><a href="#">4</a></li>
-       </ul>
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button>
    </div>
    <footer>
        <div class="about">
