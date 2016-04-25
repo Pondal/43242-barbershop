@@ -1,107 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-   <header>
-       <div class="container">
-          <a href="#">Лого</a>
-           <nav class="main-navigation">
-               <ul>
-                   <li><a href="#">Информация</a></li>
-                   <li><a href="#">Новости</a></li>
-                   <li><a href="#">Прайс-лист</a></li>
-                   <li><a href="#">Магазин</a></li>
-                   <li><a href="#">Контакты</a></li>
-               </ul>
-               <div class="user-block">
-          <a class="login" href="#">Вход</a>
+    <header>
+        <div class="container">
+            <a href="#">Лого</a>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="user-block">
+                    <a class="login" href="#">Вход</a>
+                </div>
+            </nav>
         </div>
-           </nav>
-       </div>
-   </header>
-   <div class="catalog">
-      <fieldset>
-       <legend>СРЕДСТВА ДЛЯ УХОДА</legend>
-        <input id="home" input type="submit"><label for="home">Главная</label>
-        <a href="#">Магазин</a>
-        <a href="#">Средства для ухода</a>
-        </fieldset>
-        <h1>Производители:</h1>
-        <ul class="checkbox">
-            <li>Baxter of california</li>
-            <li>MR NATTY</li>
-            <li>SULVEOTO</li>
-            <li>MALN+GOETZ</li>
-            <li>MURRAY'S</li>
-            <li>AMERICAN CREW</li>
+    </header>
+    <div class="catalog">
+        <ul id="breadcrumbs">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Магазин</a></li>
+            <li><a href="">Средства для ухода</a></li>
         </ul>
-       
-       <h1>ГРУППЫ ТОВАРОВ:</h1>
-       <ul class="radio">
-           <li>БРИТВЕННЫЕ ПРЕНАДЛЕЖНОСТИ</li>
-           <li>СРЕДСТВА ДЛЯ УХОДА</li>
-           <li>АКСЕССУАРЫ</li>
-       </ul>
-       
-       <a href="#">ПОКАЗАТЬ</a>
-   </div>
-   <div class="pictures">
-       <div class="product">
-           <img src="#" alt="набор">
-           <p>Набор для путешествий "BAXTER OF CALIFORNIA"</p>
-           <div class="price">2900руб<a class="buybutton" href="#">купить</a></div>
-       </div>
-       <div class="product">
-           <img src="#" alt="кондиционер">
-           <p>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</p>
-           <div class="price">750руб <a class="buybutton" href="#">купить</a></div>
-       </div>
-       <div class="product">
-       <img src="#" alt="гель для волос">
-       <P>Гель для волос SUAVEOTTO</P>
-       <div class="price">290руб <a class="buybutton" href="#">купить</a></div>
-       </div>
-       <div class="product">
-       <img src="#" alt="глина">
-       <P>Глина для укладки волос "AMERICAN CREW"</P>
-       <div class="price">540руб <a class="buybutton" href="#">купить</a></div>
-       </div>
-       <div class="product">
-       <img src="#" alt="гель для волос">
-       <P>Гель для волос AMERICAN CREW</P>
-       <div class="price">340руб <a class="buybutton" href="#">купить</a></div>
-       </div>
-       <div class="product">
-       <img src="#" alt="набор для бритья">
-       <P>Набор для бритья "BAXTER OF CALIFORNIA"</P>
-       <div class="price">3900руб <a class="buybutton" href="#">купить</a></div>
-       </div>
-   </div>
-   <div class="pagination">
-       <button>1</button>
-       <button>2</button>
-       <button>3</button>
-       <button>4</button>
-   </div>
-   <footer>
-       <div class="about">
-           <p>БАРБЕРШОП "БОРОДИНСКИЙ"<br>
-            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б.КОНЮШЕННАЯ,Д.19/8 <br>
-            КАК НАС НАЙТИ? <br>
-            ТЕЛЕФОН +7(495)666-02-66<br>
-           </p>
-       </div>
-       <div class="social">
-           <a href="#">ВК</a>
-           <a href="#">FB</a>
-           <a href="#">INST</a>
-       </div>
-       <div class="designed">РАЗРАБОТАНО:
-       <a href="#">HTMLACADEMY.RU</a>
-       </div>
-   </footer>    
+        <form action="">
+            <fieldset class="producers">
+                <legend>Производители:</legend>
+                <label>
+                    <input id="check" for="check" type="checkbox">Baxter of california</label>
+                <label>
+                    <input id="check" for="check" type="checkbox">MR NATTY</label>
+                <label>
+                    <input id="check" for="check" type="checkbox">SULVEOTO</label>
+                <label>
+                    <input id="check" for="check" type="checkbox">MALN+GOETZ</label>
+                <label>
+                    <input id="check" for="check" type="checkbox">MURRAY'S</label>
+                <label>
+                    <input id="check" for="check" type="checkbox">AMERICAN CREW</label>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset class="product">
+                <legend>ГРУППЫ ТОВАРОВ:</legend>
+                <label>
+                    <input type="radio">БРИТВЕННЫЕ ПРЕНАДЛЕЖНОСТИ</label>
+                <label>
+                    <input type="radio">СРЕДСТВА ДЛЯ УХОДА</label>
+                <label>
+                    <input type="radio">АКСЕССУАРЫ</label>
+            </fieldset>
+        </form>
+        <a href="#">ПОКАЗАТЬ</a>
+    </div>
+    <div class="pictures">
+        <div class="product">
+            <img src="#" alt="набор">
+            <p>Набор для путешествий "BAXTER OF CALIFORNIA"</p>
+            <div class="price">2900руб<a class="buybutton" href="#">купить</a></div>
+        </div>
+        <div class="product">
+            <img src="#" alt="кондиционер">
+            <p>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</p>
+            <div class="price">750руб <a class="buybutton" href="#">купить</a></div>
+        </div>
+        <div class="product">
+            <img src="#" alt="гель для волос">
+            <P>Гель для волос SUAVEOTTO</P>
+            <div class="price">290руб <a class="buybutton" href="#">купить</a></div>
+        </div>
+        <div class="product">
+            <img src="#" alt="глина">
+            <P>Глина для укладки волос "AMERICAN CREW"</P>
+            <div class="price">540руб <a class="buybutton" href="#">купить</a></div>
+        </div>
+        <div class="product">
+            <img src="#" alt="гель для волос">
+            <P>Гель для волос AMERICAN CREW</P>
+            <div class="price">340руб <a class="buybutton" href="#">купить</a></div>
+        </div>
+        <div class="product">
+            <img src="#" alt="набор для бритья">
+            <P>Набор для бритья "BAXTER OF CALIFORNIA"</P>
+            <div class="price">3900руб <a class="buybutton" href="#">купить</a></div>
+        </div>
+    </div>
+    <div class="pagination">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+    </div>
+    <footer>
+        <div class="about">
+            <p>БАРБЕРШОП "БОРОДИНСКИЙ"
+                <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б.КОНЮШЕННАЯ,Д.19/8
+                <br> КАК НАС НАЙТИ?
+                <br> ТЕЛЕФОН +7(495)666-02-66
+                <br>
+            </p>
+        </div>
+        <div class="social">
+            <a href="#">ВК</a>
+            <a href="#">FB</a>
+            <a href="#">INST</a>
+        </div>
+        <div class="designed">РАЗРАБОТАНО:
+            <a href="#">HTMLACADEMY.RU</a>
+        </div>
+    </footer>
 </body>
+
 </html>
